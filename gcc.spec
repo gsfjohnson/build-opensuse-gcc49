@@ -1,3 +1,5 @@
+AutoReqProv: no
+
 %{?scl:%scl_package gcc}
 %{?scl:%global __strip strip}
 %{?scl:%global __objdump objdump}
@@ -136,7 +138,7 @@ BuildRequires: glibc >= 2.3.90-35
 %endif
 %ifarch %{multilib_64_archs} sparcv9 ppc
 # Ensure glibc{,-devel} is installed for both multilib arches
-BuildRequires: /lib64/libc.so.6 /usr/lib64/libc.so
+#BuildRequires: /lib64/libc.so.6 /usr/lib64/libc.so
 %endif
 %ifarch ia64
 BuildRequires: libunwind >= 0.98
