@@ -119,7 +119,7 @@ BuildRequires: %{?scl_prefix}binutils >= 2.22.52.0.1
 BuildRequires: %{?scl_prefix}gdb >= 7.4.50
 %endif
 BuildRequires: zlib-devel, gettext, dejagnu, bison, flex, texinfo, sharutils
-BuildRequires: /usr/bin/pod2man
+#BuildRequires: /usr/bin/pod2man
 %if 0%{?rhel} >= 7
 BuildRequires: texinfo-tex
 %endif
